@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>MY-CALCULATOR</title>
+</head>
+<body>
+   <div class="bg-indigo-300 h-screen overflow-x-hidden"> 
+    <div class="grid place-content-center">
+    <h1 class="text-3xl font-bold mt-10 grid place-content-center">CALCULATOR❤️</h1>
+    <div class="p-4 bg-blue-950 rounded-[20px] mt-5">
+        
+        <p id="outputScreen"
+            class="mb-5 p-5 font-bold font-mono rounded-xl text-white  text-right"></p>
+       
+            <div class="grid grid-cols-4 gap-4">
+
+            <button class="rounded-full bg-teal-200  font-bold p-4 text-purple-700"
+                onclick="clr()">C</button>
+                
+            <button class="rounded-full bg-teal-200 p-4 font-bold text-purple-700"
+                onclick="del()">DEL</button>
+
+            <button class="rounded-full  bg-green-200 p-4 font-bold text-purple-700"
+                onclick="display('%')">%</button>
+
+            <button class="rounded-full  bg-green-200 p-4 font-bold text-purple-700"
+                onclick="display('/')">/</button>
+
+            <button class="rounded-full bg-blue-200 px-2"
+                onclick="display('7')">7</button>
+
+            <button class="rounded-full bg-blue-200 px-2"
+                onclick="display('8')">8</button>
+
+            <button class="rounded-full bg-blue-200 px-2"
+                onclick="display('9')">9</button>
+
+            <button class="rounded-full bg-green-200 p-4 font-bold text-purple-700"
+                onclick="display('*')">*</button>
+
+            <button class="rounded-full bg-blue-200 px-2"
+                onclick="display('4')">4</button>
+
+            <button class="rounded-full bg-blue-200 px-2"
+                onclick="display('5')">5</button>
+
+            <button class="rounded-full bg-blue-200 px-2"
+                onclick="display('6')">6</button>
+
+            <button class="rounded-full  bg-green-200 p-4 font-bold text-purple-700 "
+                onclick="display('-')">-</button>
+
+            <button class="rounded-full bg-blue-200 px-2"
+                onclick="display('1')">1</button>
+
+            <button class="rounded-full bg-blue-200 px-2"
+                onclick="display('2')">2</button>
+
+            <button class="rounded-full bg-blue-200 px-2"
+                onclick="display('3')">3</button>
+
+            <button class="rounded-full bg-green-200 p-4 font-bold text-purple-700"
+                onclick="display('+')">+</button>
+
+            <button class="rounded-full bg-blue-200 p-4 "
+                onclick="display('0')">0</button>
+
+            <button class="rounded-full bg-blue-200 p-4 font-extrabold"
+                onclick="display('.')">.</button>
+
+            <button class="rounded-full bg-green-200 p-4 col-span-2 font-extrabold text-purple-700"
+                onclick="calc()">=</button>
+
+        </div>
+</div>
+
+</body>
+<script src="index.js"></script>
+</html>
